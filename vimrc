@@ -39,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 let g:gruvbox_contrast_dark = 'hard'
@@ -54,3 +54,4 @@ if executable('rg')
     let g:rg_derive_root='true'
 endif
 
+map <C-n> :NERDTreeToggle<CR>
